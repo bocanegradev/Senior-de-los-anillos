@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Estilo1.css" type="text/css">
+		<script type="text/javascript" src="funciones.js"></script>
+		<title>.:The Lord of the Rings:.</title>
+	</head>
+	<h3>The Lord of the Rings</h3><h2>Bienvenido, cree el personaje que desee</h2>
+	<body>
+            <form id="frmMain" action="Servlet" accept-charset="UTF-8" method="POST">
+		<div id="col1" style="float: left; width:500;  margin-left: 200px;">
+                    <table border=1>
+                        <tr>
+                                <td colspan="2">Datos</td>
+                        </tr>
+                        <tr>
+                                <td>Nombre del personaje</td>
+                                <td><input type="text" id="txtnombre" name="txtnombre" placeholder="Nombre" required></td>
+                        </tr>
+                        <tr>
+                                <td>Raza</td>
+                                <td>
+                                    <select id="cbbraza" name="cbbraza" required onchange="changecbbRaza()">
+                                        <option value="" selected="selected">Seleccione la raza</option>
+                                        <option value="Elfo">Elfo</option>
+                                        <option value="Enano">Enano</option>
+                                        <option value="Hobbit">Hobbit</option>
+                                        <option value="Hombre">Hombre</option>
+                                        <option value="Mago">Mago</option>
+                                        <option value="Orco">Orco</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Arma</td>
+                                <td>
+                                    <select id="cbbarma" name="cbbarma" required onchange="changecbbArma()">
+                                        <option value="" selected="selected">Seleccione un arma</option>
+                                        <option value="Arco">Arco</option>
+                                        <option value="Espada">Espada</option>
+                                        <option value="Hacha">Hacha</option>
+                                        <option value="Lanza">Lanza</option>
+                                        <option value="Martillo">Martillo</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Escudo</td>
+                                <td>
+                                    <select id="cbbescudo" name="cbbescudo" required onchange="comboEscudos()">
+                                        <option value="" selected="selected">Seleccione un escudo</option>
+                                        <option value="Easterling">Easterling</option>
+                                        <option value="GilGalad">Gil Galad</option>
+                                        <option value="GuardiaRealRohirrim">Guardia Real Rohirrim</option>
+                                        <option value="Numenoriano">Numenoriano</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td colspan="2"><input type="submit" value="Enviar datos"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="col2" style="width:400; margin-left: 700px;">
+                    <table border=1>
+                        <tr>
+                                <td colspan="2">Vista previa    </td>
+                        </tr>
+                        <tr>
+                                <td colspan="2">
+                                    <label>Personaje:</label><br>
+                                    <img width="300" id="gifRaza" src="https://image.flaticon.com/icons/png/512/3/3603.png"/>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label>Arma principal:</label><br>
+                                    <img width="150" id="imgArma" src="https://image.flaticon.com/icons/png/512/3/3603.png"/>
+                                </td>
+                                <td>
+                                    <label>Escudo:</label><br>
+                                    <img width="150" id="imgEscudo" src="https://image.flaticon.com/icons/png/512/3/3603.png"/>
+                                </td>
+                        </tr>
+                    </table>
+                </div>
+		</form>
+	</body>
+</html>

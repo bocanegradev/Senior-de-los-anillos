@@ -1,0 +1,19 @@
+body {
+/*	background-image: url("http://www.masqueunchef.com/wp-content/uploads/2015/02/fondo-web-blanco.png");*/
+	background-image: url("http://www.donwar.fr/wp-content/uploads/2012/12/jjAq3tCezdlQduusgtMhpY2XzW0.jpg");
+}
+h3 {
+	font-family: Vegur;
+	text-align: center;
+	font-size:150%;
+}
+td{
+	border: 1px solid gray;
+}
+table {
+	color: gray;
+	font-family: monospace;
+	font-size:150%;
+	text-align: left;
+}
+
